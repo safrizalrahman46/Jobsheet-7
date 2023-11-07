@@ -16,6 +16,7 @@ public class DoWhileLeaveEntitlement22 {
                 if (konfirmasi.equalsIgnoreCase("y")) {
                     System.out.print("Jumlah hari: ");
                     jumlahHari = sc.nextInt();
+
                     if (jumlahHari<=jatahCuti) {
                         jatahCuti-=jumlahHari;
                         System.out.println("Sisa jatah cuti: "+ jatahCuti);
@@ -23,7 +24,18 @@ public class DoWhileLeaveEntitlement22 {
                         System.out.println("Sisa jatah cuti Anda tidak mencukupi");
                         break;
                     }
+                    // } else {
+                    //     System.out.println("Sudah Cukup");
+                    //     break;
+                    // }
             }
+            //Memberhentikan T
+            else {
+                System.out.println("Sudah Cukupu Baiklah");
+                break;
+
+            }
+            
         } while (jatahCuti>0);
     }
 }
